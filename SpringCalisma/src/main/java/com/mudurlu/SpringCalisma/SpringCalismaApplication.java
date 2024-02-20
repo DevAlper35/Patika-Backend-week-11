@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringCalismaApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(SpringCalismaApplication.class, args);
 	}
 
