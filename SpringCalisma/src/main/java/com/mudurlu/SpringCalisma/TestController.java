@@ -19,7 +19,17 @@ public class TestController {
     }
 
     @GetMapping("/user/{userid}")
-    public String getUser(@PathVariable("userid")int user_id){
+    public String getUserID(@PathVariable("userid")int user_id){
         return "User ID: " +user_id;
+    }
+
+    @GetMapping("/user/{userid}/{username}")
+    public String getUserName(@PathVariable("username")String user_name){
+        return "Merhaba " +user_name;
+    }
+
+    @GetMapping("/user/{userid}/{username}/{usersurname}")
+    public String getUserNameSurname(@PathVariable("username")String user_name,@PathVariable("usersurname")String user_surname){
+        return "Hoşgeldiniz " + user_name + " " + user_surname;
     }
 }
